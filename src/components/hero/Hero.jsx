@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
-import fallback from '../../assets/fallback.avif'
+import fallback from "../../assets/fallback.avif";
 
 const Hero = () => {
   const [imagen, setImagen] = useState(null);
@@ -9,7 +9,9 @@ const Hero = () => {
   const obtenerImagen = async () => {
     try {
       const res = await fetch(
-        `https://api.unsplash.com/photos/random?query=madrid&client_id=${import.meta.env.VITE_UNSPLASH_KEY}`
+        `https://api.unsplash.com/photos/random?query=madrid&client_id=${
+          import.meta.env.VITE_UNSPLASH_KEY
+        }`
       );
       const data = await res.json();
       setImagen(data.urls.regular);
@@ -22,7 +24,7 @@ const Hero = () => {
 
   useEffect(() => {
     obtenerImagen();
-    const intervalo = setInterval(obtenerImagen, 90000); // cada 90 segundos
+    const intervalo = setInterval(obtenerImagen, 90000);
     return () => clearInterval(intervalo);
   }, []);
 

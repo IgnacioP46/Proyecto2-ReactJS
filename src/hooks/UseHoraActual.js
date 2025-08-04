@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import { useContext } from 'react';
+import { HoraContext } from '../contex/HoraContex';
+
+export const useHora = () => useContext(HoraContext);
+
 
 export function useHoraActual() {
   const [hora, setHora] = useState("");
@@ -18,8 +23,8 @@ export function useHoraActual() {
       setHora(`${horaFormateada} - ${fechaFormateada}`);
     };
 
-    actualizarHora(); // actualizar al inicio
-    const intervalo = setInterval(actualizarHora, 60000); // cada 1 min
+    actualizarHora();
+    const intervalo = setInterval(actualizarHora, 60000);
 
     return () => clearInterval(intervalo);
   }, []);

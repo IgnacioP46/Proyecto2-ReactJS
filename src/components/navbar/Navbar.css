@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content:  space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--color-principal);
   color: white;
@@ -50,6 +50,7 @@
   color: white;
   cursor: pointer;
 }
+
 .menu-desplegable {
   display: none;
 }
@@ -63,7 +64,7 @@
     display: block;
   }
 
-  .menu-desplegable  {
+  .menu-desplegable {
     display: none;
     position: absolute;
     top: 65px;
@@ -78,7 +79,7 @@
   }
 
   .menu-desplegable.abierto {
-    display: flex;    
+    display: flex;
   }
 
   .menu-desplegable a {
@@ -90,7 +91,11 @@
   }
 
 }
+
 @media screen and (max-width: 1024px) {
+  .navbar {
+  justify-content: start;
+}
   .menu-desplegable {
     display: none;
   }
@@ -110,6 +115,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+  justify-content: start;
+}
   .nav-left {
     gap: 0.5rem;
   }

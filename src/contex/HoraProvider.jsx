@@ -3,12 +3,16 @@ import React, { createContext, useState, useEffect } from 'react';
 export const HoraContext = createContext();
 
 export const HoraProvider = ({ children }) => {
-  const [hora, setHora] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+  const [hora, setHora] = useState(
+    new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setHora(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
-    }, 60000); // cada 60 segundos en lugar de 1
+      setHora(
+        new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      );
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 

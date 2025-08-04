@@ -1,5 +1,5 @@
 import React from "react";
-import Formulario from "../components/formulario/formulario";
+import Formulario from "../components/formulario/Formulario";
 
 function Contacto() {
   return (

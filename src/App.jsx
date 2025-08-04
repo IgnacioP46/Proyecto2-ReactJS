@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Conocenos from "./pages/Conocenos";
-import Tarifas from "./pages/tarifas";
+import Tarifas from "./pages/Tarifas";
 import Contacto from "./pages/Contacto";
 import "./index.css";
+
+
 
 function App() {
   return (

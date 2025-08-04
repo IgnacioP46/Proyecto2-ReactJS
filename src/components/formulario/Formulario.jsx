@@ -38,7 +38,9 @@ function Formulario() {
             })}
             className={errors.nombre ? "input-error" : ""}
           />
-          {errors.nombre && <p className="mensaje-error">{errors.nombre.message}</p>}
+          {errors.nombre && (
+            <p className="mensaje-error">{errors.nombre.message}</p>
+          )}
         </div>
 
         <div className="campo">
@@ -57,7 +59,9 @@ function Formulario() {
             })}
             className={errors.correo ? "input-error" : ""}
           />
-          {errors.correo && <p className="mensaje-error">{errors.correo.message}</p>}
+          {errors.correo && (
+            <p className="mensaje-error">{errors.correo.message}</p>
+          )}
         </div>
 
         <div className="campo">
@@ -75,7 +79,9 @@ function Formulario() {
             <option value="averias">Averías</option>
             <option value="contacto">Contacto</option>
           </select>
-          {errors.asunto && <p className="mensaje-error">{errors.asunto.message}</p>}
+          {errors.asunto && (
+            <p className="mensaje-error">{errors.asunto.message}</p>
+          )}
         </div>
 
         <div className="campo">
@@ -93,7 +99,9 @@ function Formulario() {
             })}
             className={errors.mensaje ? "input-error" : ""}
           />
-          {errors.mensaje && <p className="mensaje-error">{errors.mensaje.message}</p>}
+          {errors.mensaje && (
+            <p className="mensaje-error">{errors.mensaje.message}</p>
+          )}
         </div>
 
         <div className="campo">
