@@ -1,0 +1,99 @@
+.formulario-card {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-titulo {
+  font-size: 2rem;
+  color: var(--color-principal);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--color-acento)
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-principal);
+  box-shadow: 0 0 4px var(--color-principal);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: var(--color-acento);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover:enabled {
+  background-color: #d4a300;
+  transform: scale(1.02);
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.mensaje-error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.input-error {
+  border: 1.5px solid red;
+  background-color: #ffe6e6;
+}
+.obligatorio {
+  color: var(--color-acento);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 0.4rem;
+}
+
+.opcional {
+  color: #888;
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+}

@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  justify-content:  space-evenly;
+  align-items: center;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-right {
+  gap: 1.2rem;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.logo-navbar {
+  height: 45px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--color-acento);
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.menu-desplegable {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-left a {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-desplegable  {
+    display: none;
+    position: absolute;
+    top: 65px;
+    display: none;
+    left: 0;
+    right: 0;
+    background-color: var(--color-principal);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .menu-desplegable.abierto {
+    display: flex;    
+  }
+
+  .menu-desplegable a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 4px;
+  }
+
+}
+@media screen and (max-width: 1024px) {
+  .menu-desplegable {
+    display: none;
+  }
+
+  .menu-desplegable.abierto {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-principal);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-left {
+    gap: 0.5rem;
+  }
+
+  .logo-navbar {
+    height: 40px;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
