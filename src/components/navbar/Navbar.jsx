@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import useHora from "../../hooks/useHora";
-import logo from "../../assets/logo ADGES N.png";
+import logo from "../../assets/logo ADGES B.png";
 
 const Navbar = () => {
   const hora = useHora();

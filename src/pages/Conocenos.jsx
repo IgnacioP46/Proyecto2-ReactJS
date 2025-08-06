@@ -6,7 +6,7 @@ import logo from "../assets/faviconAdges2.png";
 
 function Conocenos() {
   return (
-    <div className="conocenos-container">
+    <div className="conocenosContainer">
       <Hero />
       <h1 className="titulo-conocenos">
         <img src={logo} alt="ADGES Logo" className="logo-h1" />

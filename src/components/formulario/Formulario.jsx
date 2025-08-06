@@ -24,7 +24,7 @@ function Formulario() {
 
   return (
     <div className="formulario-card">
-      <h2 className="formulario-titulo">Contáctanos</h2>
+      <h2 className="formulario-titulo">Mandanos un correo</h2>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="campo">
           <label>

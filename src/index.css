@@ -91,7 +91,24 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+  
+@media screen and (max-width: 1024px) {
+  h2 {
+  font-size: 4rem;
+}
+p {
+  font-size: 2rem;
+}
+}
 
+@media screen and (max-width: 768px) {
+  h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1rem;
+}
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
