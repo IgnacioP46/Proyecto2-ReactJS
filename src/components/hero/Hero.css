@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: 650px;
+  height: 550px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -15,30 +15,17 @@
   object-position: center;
 }
 
-.hero-texto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--color-acento);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-align: center;
+
+@media screen and (max-width: 1024px) {
+   .hero {
+    height: 450px;
+  }
+
 }
 
-.hero-texto h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .hero {
     height: 300px;
   }
 
-  .hero-texto h1 {
-    font-size: 1.3rem;
-  }
 }

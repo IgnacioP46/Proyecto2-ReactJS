@@ -5,7 +5,7 @@
 }
 .formulario-card {
   max-width: 600px;
-  margin: 3rem auto;
+  margin: 4rem auto;
   padding: 2rem;
   background: white;
   border-radius: 16px;
@@ -33,7 +33,7 @@ form {
 label {
   font-weight: 600;
   margin-bottom: 0.4rem;
-  color: var(--color-acento)
+  color: black;
 }
 
 input,
