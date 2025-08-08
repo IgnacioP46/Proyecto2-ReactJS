@@ -3,10 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --color-principal: #003366;
-  --color-secundario: #006699;
-  --color-acento: #ffcc00;
-  --color-fondo: #006699;
+  --color-principal: #274047;
+  --color-secundario: #CBD0D3;
+  --color-acento: #EECC74;
+  --color-fondo: #CBD0D3;
 
 
   font-synthesis: none;
@@ -23,7 +23,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-fondo);
-  color: white;
+  color: black;
   overflow-x: hidden;
 }
 
@@ -34,7 +34,7 @@ main {
 
 a {
   text-decoration: none;
-  color: var(--color-texto);
+  color: black;
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -46,12 +46,12 @@ a:hover {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--color-principal);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--color-acento);
 }
 
 p {
@@ -59,7 +59,7 @@ p {
   border-left: 5px solid var(--color-acento);
   padding-left: 1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: black;
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -69,7 +69,7 @@ h2 {
   border-left: 5px solid var(--color-acento);
   padding-left: 1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: black;
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -88,7 +88,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: var(--color-principal);
 }
 
 button:focus,
